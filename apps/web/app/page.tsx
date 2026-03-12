@@ -1,5 +1,6 @@
 'use client'
 
+import { Suspense } from 'react'
 import { Navbar } from '@/components/navbar'
 import { Hero } from '@/components/hero'
 import { Playground } from '@/components/playground'
@@ -16,7 +17,9 @@ export default function Home() {
     <main className="min-h-screen bg-background text-foreground">
       <Navbar />
       <Hero />
-      <Playground />
+      <Suspense fallback={<div className="h-96" />}>
+        <Playground />
+      </Suspense>
       <CodeSnippets />
       <Documentation />
       <NpmSection />
