@@ -16,7 +16,7 @@ const snippets = {
   style="border-radius: 50%;"
 />`,
 
-  react: `// Install: npm install mugbear (coming soon)
+  react: `// Install: npm install mugbear
 // Or use the API directly:
 
 interface AvatarProps {
@@ -147,7 +147,7 @@ function FrameworkIcon({ framework }: { framework: 'html' | 'react' | 'vue' | 'n
 
 export function CodeSnippets() {
   return (
-    <section className="border-b border-border px-4 py-20 sm:px-6 lg:px-8">
+    <section id="implementation" className="border-b border-border px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="space-y-8">
           <div>

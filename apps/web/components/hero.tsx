@@ -93,6 +93,10 @@ export function Hero() {
     document.getElementById('playground')?.scrollIntoView({ behavior: 'smooth' })
   }
 
+  const scrollToDocs = () => {
+    document.getElementById('implementation')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <section className="border-b border-border px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
@@ -100,7 +104,7 @@ export function Hero() {
           {/* Text */}
           <div className="space-y-6 text-center">
             <h1 className="text-5xl font-bold tracking-tight sm:text-6xl">
-              Avatar Playground & API
+              Avatar Playground for Developers
             </h1>
             <p className="mx-auto max-w-2xl text-xl text-muted-foreground">
               Generate consistent avatars from any name. One package, three providers, zero config.
@@ -111,7 +115,7 @@ export function Hero() {
               <Button size="lg" onClick={scrollToPlayground} className="bg-foreground text-background hover:bg-foreground/90">
                 Open Playground ↓
               </Button>
-              <Button size="lg" variant="outline">
+              <Button size="lg" variant="outline" onClick={scrollToDocs}>
                 View Docs ↓
               </Button>
             </div>
