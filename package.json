@@ -4,42 +4,52 @@
   "description": "Free avatar API hub for developers — DiceBear, UI Avatars & RoboHash in one package",
   "author": "mugbear",
   "license": "MIT",
-  "keywords": ["avatar", "dicebear", "ui-avatars", "robohash", "avatar-generator", "react", "typescript"],
+  "keywords": ["avatar","dicebear","ui-avatars","robohash","avatar-generator","react","typescript"],
+
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "sideEffects": false,
+
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     },
     "./react": {
+      "types": "./dist/react.d.ts",
       "import": "./dist/react.mjs",
-      "require": "./dist/react.js",
-      "types": "./dist/react.d.ts"
+      "require": "./dist/react.js"
     }
   },
+
   "files": ["dist"],
+
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
     "prepublishOnly": "npm run build"
   },
+
   "devDependencies": {
     "@types/react": "^18.0.0",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
   },
+
   "peerDependencies": {
     "react": ">=17.0.0"
   },
+
   "peerDependenciesMeta": {
     "react": { "optional": true }
   },
+
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourname/mugbear"
+    "url": "https://github.com/azmaldev/mugbear"
   },
-  "homepage": "https://yourname.github.io/mugbear"
+
+  "homepage": "https://azmaldev.github.io/mugbear"
 }
