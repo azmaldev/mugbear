@@ -156,20 +156,20 @@ export function CodeSnippets() {
           </div>
 
           <Tabs defaultValue="react" className="w-full">
-            <TabsList className="grid w-full grid-cols-4">
-              <TabsTrigger value="html">
+            <TabsList className="grid w-full grid-cols-4 overflow-x-auto whitespace-nowrap">
+              <TabsTrigger value="html" className="whitespace-nowrap">
                 <FrameworkIcon framework="html" />
                 HTML
               </TabsTrigger>
-              <TabsTrigger value="react">
+              <TabsTrigger value="react" className="whitespace-nowrap">
                 <FrameworkIcon framework="react" />
                 React
               </TabsTrigger>
-              <TabsTrigger value="vue">
+              <TabsTrigger value="vue" className="whitespace-nowrap">
                 <FrameworkIcon framework="vue" />
                 Vue
               </TabsTrigger>
-              <TabsTrigger value="native">
+              <TabsTrigger value="native" className="whitespace-nowrap">
                 <FrameworkIcon framework="native" />
                 React Native
               </TabsTrigger>
